@@ -3,7 +3,7 @@
     "strictPropertyInitialization": false,
     "module": "commonjs",
     "moduleResolution": "node",
-    "lib": ["esnext", "es6"],
+    "lib": ["esnext", "es6", "dom"],
     "target": "es2015",
     "strict": true,
     "outDir": "./lib",

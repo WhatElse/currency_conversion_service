@@ -1,5 +1,7 @@
 import * as rp from "request-promise";
 
+import { IRates } from "./../interfaces/IExchangeRateApi";
+
 const BASE_API_URL = "https://api.exchangeratesapi.io";
 
 export const getCurrencies = async (): Promise<string[]> => {

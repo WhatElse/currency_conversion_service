@@ -11,7 +11,7 @@ router.get("/", (req: Request, res: Response) => {
 router.get("/currencies", async (req: Request, res: Response) => {
   try {
     const currencies = await getCurrencies();
-    res.send(currencies);
+    res.send({ data: currencies });
   } catch (e) {
     res.status(500).send(e);
   }
@@ -23,7 +23,7 @@ router.post(
     check("quote_currency").isString(),
     check("quote_currency").isLength({ min: 3, max: 3 }),
     check("base_currency").isString(),
-    check("quote_currency").isLength({ min: 3, max: 3 }),
+    check("base_currency").isLength({ min: 3, max: 3 }),
     check("value").isNumeric()
   ],
   async (req: Request, res: Response) => {
@@ -37,7 +37,7 @@ router.post(
         req.body.base_currency,
         req.body.quote_currency
       );
-      res.send((conversion * req.body.value).toString());
+      res.send({ data: conversion * req.body.value });
     } catch (e) {
       res.status(400).json(e);
     }

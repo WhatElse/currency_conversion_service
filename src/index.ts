@@ -11,3 +11,5 @@ server.app.use(bodyParser.json());
 server.app.use(router);
 
 server.start(() => console.log("Server started"));
+
+export default server;

@@ -9,6 +9,10 @@
     "watch": "npm run build -- --watch",
     "start": "npm run build && node lib/index.js"
   },
+  "engines": {
+    "node": "10.5.0",
+    "npm": "6.x"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
@@ -43,8 +47,9 @@
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0",
     "ts-node": "^8.0.3",
-    "tslint": "^5.14.0",
+    "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.4.2"
+    "typescript": "^3.4.2",
+    "husky": "^2.2.0"
   }
 }

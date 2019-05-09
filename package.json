@@ -1,0 +1,45 @@
+{
+  "name": "basic_currency_conversion_service",
+  "version": "1.0.0",
+  "description": "A basic currency conversion service",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --pretty",
+    "watch": "npm run build -- --watch",
+    "start": "npm run build && node lib/index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhatElse/currency_conversion_service.git"
+  },
+  "keywords": [
+    "typescript",
+    "currency",
+    "node",
+    "express"
+  ],
+  "author": "Félix Wattez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WhatElse/currency_conversion_service/issues"
+  },
+  "homepage": "https://github.com/WhatElse/currency_conversion_service#readme",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.0",
+    "pretty-quick": "^1.10.0",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.2"
+  }
+}

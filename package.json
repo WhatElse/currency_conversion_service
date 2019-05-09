@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --pretty",
     "watch": "npm run build -- --watch",
-    "start": "npm run build && node lib/index.js"
+    "start": "npm i && npm run build && node lib/index.js"
   },
   "engines": {
     "node": "10.5.0",

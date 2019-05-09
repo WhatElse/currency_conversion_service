@@ -22,3 +22,5 @@ curl -X GET \
   https://currency-conversion-service.herokuapp.com/currencies \
   -H 'Content-Type: application/json' \
 ```
+
+Using ExchangeRatesAPI (https://github.com/exchangeratesapi/exchangeratesapi).
